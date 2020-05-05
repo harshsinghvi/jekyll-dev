@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     serv:
-        image: insomniaccoder/ror-dev
+        image: insomniaccoder/jekyll-dev
         volumes: 
             - '.:/mnt'
         ports:
