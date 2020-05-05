@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    serv:
+        image: insomniaccoder/ror-dev
+        volumes: 
+            - '.:/mnt'
+        ports:
+            - 4000:4000
+        
