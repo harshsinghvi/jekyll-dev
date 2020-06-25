@@ -1,7 +1,5 @@
-FROM debian
-EXPOSE 4000
-WORKDIR /mnt
-RUN apt update
-RUN apt-get install -y ruby-full build-essential zlib1g-dev nano git
-RUN gem install jekyll bundler
+FROM insomniaccoder/jekyll-dev
+EXPOSE 4000 80 
+WORKDIR /app 
 RUN bundle config --global silence_root_warning 1
+CMD bash 
